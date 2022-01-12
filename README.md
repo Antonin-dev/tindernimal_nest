@@ -2,11 +2,17 @@
   <img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a> 
 </p>  
 
+
 ## Description
 
 API for a future application, which will aim to help owners of dogs to find a partner for their bestfriend to reproduce
-with. Created by Virginie Baumes, Mathilde Grimal, Antonin Val, Lise Guichard.
-
+with. Created by 
+```
+Virginie Baumes
+Mathilde Grimal 
+Antonin Val
+Lise Guichard
+```
 ## Installation
 
 ```bash 
@@ -25,13 +31,31 @@ $ npm run start
  # watch mode 
 $ npm run start:dev   
 ```
+**create and write into .env** </br>
+```SECRETKEY=yoursecretkey```(what you want)
 
-Go to <a>http://localhost:3000/api/</a>
+
+Go to <a>http://localhost:3000/api/ </a>
+
+getToken for acces to owners and animals. </br>
+Use this
+```
+{
+"username": "john",
+"password": "changeme"
+}
+```
 
 ### Production
 
+if you want to use your cloud database in production, you need to add these variables.</br>
 Create at the root of the application a .env file with:
-DB_PASSWORD=yourpassword DB_NAME=yourDBNAME DB_HOST=yourDBHOST SECRETKEY=yoursecretkey
+```
+DB_PASSWORD=<yourpassword >
+DB_NAME=yourDBNAME 
+DB_HOST=yourDBHOST 
+SECRETKEY=yoursecretkey 
+```
 
 ## Test
 
